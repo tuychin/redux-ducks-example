@@ -10,23 +10,23 @@ const initialState = {
 
 const counterReducer = (state = initialState, action) => {
     switch (action.type) {
-      case RND:
-        return {
-            count: state.count + action.payload
-        };
-  
-      case INC:
-        return {
-            count: state.count + 1,
-        };
-  
-      case DEC:
-        return {
-            count: state.count - 1,
-        };
-  
-      default:
-        return state;
+        case RND:
+            return {
+                count: state.count + action.payload
+            };
+
+        case INC:
+            return {
+                count: state.count + 1,
+            };
+
+        case DEC:
+            return {
+                count: state.count - 1,
+            };
+
+        default:
+            return state;
     }
 };
 
